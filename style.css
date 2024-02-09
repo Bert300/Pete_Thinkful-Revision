@@ -16,58 +16,60 @@ h3 {
   text-align: center;
 }
 
-
 /* Header */
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; /* Horizontally align items */
-  align-items: center; /* Vertically center items */
-  padding: 20px 40px;
-}
-
-header h1 {
-  flex: 1; 
-  text-align: right;
-}
-
-header nav {
-  flex: 1;
-}
-
-/* About section*/
-.about-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; /* Horizontally center items */
-  align-items: center; /* Vertically center items */
-}
-
-.about-image {
-  flex: 1;
   text-align: center;
 }
 
-.about-text {
-  flex: 1;
+.headerElements {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 4px;
+  align-items: center;
+  justify-items: center; 
+}
+
+/* About */
+.center {
+  text-align: center;
+}
+
+.section1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
   text-align: left;
 }
 
+.section2 {
+  text-align: left;
+}
 
 /* Portfolio section */
-.portfolio-content {
+#portfolio {
   display: flex;
-  flex-direction: row;
-  gap:12px; /* space in between projects*/
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.portfolio-section {
+#portfolio p {
+  text-align: center;
+  font-size: 14px;
+} 
+
+.portfolioH2 {
+  margin: 0 0 -50px 0;
+}
+
+.item {
   flex: 1;
+  padding: 3px;
+  margin: 2px;
 }
 
-.portfolio-section p {
-  font-size: 14px; /* project descriptions using font size of 14px*/
-}
 
 /* Containers */
 div {
@@ -80,7 +82,7 @@ article {
   padding: 50px 0;
 }
 
-#portfolio div {
+article div {
   text-align: center;
   width: 100%;
 }
@@ -113,7 +115,6 @@ img {
 .image-circle {
   border: 2px solid #003049;
   border-radius: 50%;
-  text-align: center;
 }
 
 /* Footer */
@@ -124,4 +125,8 @@ footer {
 /* Other page elements */
 hr {
   border: 1px solid black;
+}
+
+.hr1 {
+  margin: 0px 0px 70px 0
 }
