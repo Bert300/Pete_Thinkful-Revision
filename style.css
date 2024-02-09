@@ -1,64 +1,126 @@
-/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
+/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
 body {
-  color: #003049;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px; 
   background-color: #eae2b7;
+  color: #003049;
+  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
 }
 
-/* Set the font family for any h1, h2, or h3 heading */
-h1{
-  font-family: "Playfair Display", serif;
+/* Headings */
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", Times, serif;
   text-align: center;
 }
 
-h2, nav { 
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Horizontally align items */
+  align-items: center; /* Vertically center items */
+  padding: 20px 40px;
+}
+
+header h1 {
+  flex: 1; 
+  text-align: right;
+}
+
+header nav {
+  flex: 1;
+}
+
+/* About section*/
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Horizontally center items */
+  align-items: center; /* Vertically center items */
+}
+
+.about-image {
+  flex: 1;
   text-align: center;
-  font-family: "Playfair Display", serif;
 }
 
-h3, footer{
-  text-align: center;
-  text font-family: "Playfair Display", Times, serif;
+.about-text {
+  flex: 1;
+  text-align: left;
 }
 
-p {
-  line-height: 1.5;
+
+/* Portfolio section */
+.portfolio-content {
+  display: flex;
+  flex-direction: row;
+  gap:12px; /* space in between projects*/
 }
 
-a:link { color: #d62828;}
-a:hover{ color: #f77f00;}
+.portfolio-section {
+  flex: 1;
+}
+
+.portfolio-section p {
+  font-size: 14px; /* project descriptions using font size of 14px*/
+}
+
+/* Containers */
+div {
+  background-color: #eae2b7;
+  margin: auto;
+  width: 600px;
+}
 
 article {
   padding: 50px 0;
 }
 
-article div {
+#portfolio div {
   text-align: center;
   width: 100%;
 }
 
-/* The div container constrains the content width within the main container to 600px */
-div {
-  margin: auto;
-  width: 600px;
+/* Paragraphs */
+p {
+  line-height: 1.5;
 }
 
+/* Links */
+a:link {
+  color: #d62828;
+}
+
+a:hover {
+  color: #f77f00;
+}
+
+nav a {
+  padding-left: 20px;
+}
+
+/* Images */
 img {
   width: 100%;
   max-width: 200px;
   height: auto;
 }
 
-hr {
-  border: 2px solid black;
+.image-circle {
+  border: 2px solid #003049;
+  border-radius: 50%;
 }
 
-/* Add your solution below */
+/* Footer */
+footer {
+  text-align: center;
+}
 
-.image-circle {
-  border-radius: 50%;
-  border: 2px solid #003049;
+/* Other page elements */
+hr {
+  border: 1px solid black;
 }
